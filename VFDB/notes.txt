@@ -1,0 +1,18 @@
+cinadei_only:
+lypooligosaccarides: BAM33113.1 (involved in their sythesis, then they're exported by ABC transporters)
+capsule biosynthesis: BAM31900.1 (amino oxidase according to SMART, UDP-galactopyranose mutase according to uniprot)
+                      BAM32000.1 (dTDP-6-deoxy-L-hexose 3-O-methyltransferase, SMART agrees)
+                      BAM32972.1 (||--||)
+
+hepatic_power:
+lypopolysaccarides: BAM32363.1 (UDP-glucose/GDP-mannose dehydrogenase)
+capsule: BAM33186.1 (UDP-glucose 6-dehydrogenase - glucuronate manufacture)
+T6SS: BAM32828.1
+      BAM32827.1
+      BAM32664.1 DEATH TO MACROPHAGES
+      BAM32665.1
+      BAM32698.1 (TF that rules this stuff)
+toxins: BAM31971.1 (CDT toxin: causes DNA cleavage in mammalian cells)
+        BAM31972.1
+some serum resistance LPS: BAM32524.1 (surface polysaccarides synthesis)
+

@@ -1,0 +1,293 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Fri 29 Nov 2019 10:43:28
+# Commandline: patmatmotifs
+#    -full True
+#    -sequence testmotif.fasta
+#    -outfile report.paratmotifs
+# Report_format: dbmotif
+# Report_file: report.paratmotifs
+########################################
+
+#=======================================
+#
+# Sequence: CAP     from: 1   to: 210
+# HitCount: 3
+#
+# Full: Yes
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 24
+Start = position 168 of sequence
+End = position 191 of sequence
+
+Motif = HTH_CRP_1
+
+GMQIKITRQEIGQIVGCSRETVGRILKMLEDQNL
+     |                      |
+   168                      191
+
+Length = 17
+Start = position 30 of sequence
+End = position 46 of sequence
+
+Motif = CNMP_BINDING_1
+
+PSKSTLIHQGEKAETLYYIVKGSVAVL
+     |               |
+    30               46
+
+Length = 19
+Start = position 71 of sequence
+End = position 89 of sequence
+
+Motif = CNMP_BINDING_2
+
+NQGDFIGELGLFEEGQERSAWVRAKTACE
+     |                 |
+    71                 89
+
+
+#---------------------------------------
+#
+# Motif: HTH_CRP_1
+# Count: 1
+# 
+# *********************************************
+# * Crp-type HTH domain signature and profile *
+# *********************************************
+# 
+# The  crp-type  HTH  domain  is  a  DNA-binding, winged helix-turn-helix (wHTH)
+# domain  of  about 70-75 amino acids present in transcription regulators of the
+# crp-fnr  family,  involved  in  the  control  of virulence factors, enzymes of
+# aromatic  ring  degradation,  nitrogen  fixation,  photosynthesis, and various
+# types  of  respiration.  The  crp-fnr  family is named after the first members
+# identified  in  E.coli: the well characterized cyclic AMP receptor protein CRP
+# or  CAP  (catabolite activator protein) and the fumarate and nitrate reductase
+# regulator  Fnr.  crp-type  HTH  domain  proteins occur in most bacteria and in
+# chloroplasts  of  red  algae.  The  DNA-binding  HTH  domain is located in the
+# C-terminal  part;  the  N-terminal  part of the proteins of the crp-fnr family
+# contains    a    nucleotide-binding    domain    (see   <PDOC00691>)   and   a
+# dimerization/linker   helix   occurs   in   between.  The  crp-fnr  regulators
+# predominantly  act  as  transcription  activators,  but  can also be important
+# repressors,  and  respond to diverse intracellular and exogenous signals, such
+# as  cAMP,  anoxia,  redox  state,  oxidative  and  nitrosative  stress, carbon
+# monoxide, nitric oxide or temperature [1,2].
+# 
+# The  structure  of the crp-type DNA-binding domain (see <PDB:1LB2>) shows that
+# the  helices (H) forming the helix-turn-helix motif (H2-H3) are flanked by two
+# beta-hairpin  (B)  wings,  in  the  topology  H1-B1-B2-H2-H3-B3-B4. Helix 3 is
+# termed  the  recognition helix, as in most wHTHs it binds the DNA major groove
+# [3,4,5].
+# 
+# Some proteins known to contain a Crp-type HTH domain:
+# 
+#  - Escherichia  coli  crp  (also  known  as  cAMP  receptor),  a  protein that
+#    complexes   with   cAMP   and   regulates   the  transcription  of  several
+#    catabolite-sensitive operons.
+#  - Escherichia  coli fnr, a protein that activates genes for proteins involved
+#    in a variety of anaerobic electron transport systems.
+#  - Rhizobium   leguminosarum  fnrN,  a  transcription  regulator  of  nitrogen
+#    fixation.
+#  - Rhodobacter  sphaeroides  fnrL, a transcription activator of genes for heme
+#    biosynthesis,   bacteriochlorophyll   synthesis  and  the  light-harvesting
+#    complex LHII.
+#  - Rhizobiacae  fixK,  a  protein that regulates nitrogen fixation genes, both
+#    positively and negatively.
+#  - Lactobacillus  casei  fnr-like  protein  flp, a putative regulatory protein
+#    linked to the trpDCFBA operon.
+#  - Cyanobacteria  ntcA,  a  regulator  of  the  expression of genes subject to
+#    nitrogen control.
+#  - Xanthomonas  campestris  clp,  a  protein  involved  in  the  regulation of
+#    phytopathogenicity.  Clp  controls the production of extracellular enzymes,
+#    xanthan gum and pigment, either positively or negatively.
+# 
+# The  'helix-turn-helix'  DNA-binding motif of these proteins is located in the
+# C-terminal  part  of the sequence. The pattern we use to detect these proteins
+# starts  two residues before the HTH motif and ends two residues before the end
+# of helix 3. We also developed a profile that covers the entire wHTH, including
+# helix 1 and strand 4, and which allows a more sensitive detection.
+# 
+# -Consensus pattern: [LIVM]-[STAG]-[RHNWM]-x(2)-[LIM]-[GA]-x-[LIVMFYAS]-
+#                     [LIVSC]-[GA]-x-[STACN]-x(2)-[MST]-x(1,2)-[GSTN]-R-x-
+#                     [LIVMF]-x(2)-[LIVMF]
+# -Sequences known to belong to this class detected by the pattern: ALL.
+# -Other sequence(s) detected in Swiss-Prot: 1.
+# 
+# -Sequences known to belong to this class detected by the profile: ALL.
+# -Other sequence(s) detected in Swiss-Prot: NONE.
+# 
+# -Last update: April 2006 / Pattern revised.
+# 
+# [ 1] Irvine A.S., Guest J.R.
+#      "Lactobacillus casei contains a member of the CRP-FNR family."
+#      Nucleic Acids Res. 21:753-753(1993).
+#      PubMed=8441692
+# [ 2] Koerner H., Sofia H.J., Zumft W.G.
+#      FEMS Microbiol. Rev. 27:559-592(2003).
+# [ 3] Busby S., Ebright R.H.
+#      "Transcription activation by catabolite activator protein (CAP)."
+#      J. Mol. Biol. 293:199-213(1999).
+#      PubMed=10550204; DOI=10.1006/jmbi.1999.3161
+# [ 4] Lanzilotta W.N., Schuller D.J., Thorsteinsson M.V., Kerby R.L.,
+#      Roberts G.P., Poulos T.L.
+#      "Structure of the CO sensing transcription activator CooA."
+#      Nat. Struct. Biol. 7:876-880(2000).
+#      PubMed=11017196; DOI=10.1038/82820
+# [ 5] Huffman J.L., Brennan R.G.
+#      "Prokaryotic transcription regulators: more than just the
+#      helix-turn-helix motif."
+#      Curr. Opin. Struct. Biol. 12:98-106(2002).
+#      PubMed=11839496
+# 
+# ***************
+# 
+# Motif: CNMP_BINDING_1
+# Count: 1
+# 
+# ***********************************************************
+# * Cyclic nucleotide-binding domain signatures and profile *
+# ***********************************************************
+# 
+# Proteins that bind cyclic nucleotides (cAMP or cGMP) share a structural domain
+# of about  120  residues  [1-3].  The  best  studied  of  these proteins is the
+# prokaryotic catabolite  gene  activator  (also  known  as  the  cAMP  receptor
+# protein) (gene  crp)  where  such  a  domain  is known to be composed of three
+# alpha-helices and  a    distinctive   eight-stranded, antiparallel beta-barrel
+# structure. Such a domain is known to exist in the following proteins:
+# 
+#  - Prokaryotic catabolite gene activator protein (CAP).
+#  - cAMP-  and  cGMP-dependent  protein  kinases (cAPK and cGPK). Both types of
+#    kinases contains two tandem copies of the cyclic nucleotide-binding domain.
+#    The cAPK's  are composed of two different subunits: a catalytic chain and a
+#    regulatory chain  which  contains both copies of the domain. The cGPK's are
+#    single chain  enzymes that include the two copies of the domain in their N-
+#    terminal section.  The nucleotide specificity of cAPK and cGPK is due to an
+#    amino acid  in  the  conserved region of beta-barrel 7: a threonine that is
+#    invariant in cGPK is an alanine in most cAPK.
+#  - Vertebrate  cyclic nucleotide-gated ion-channels. Two such cations channels
+#    have been  fully  characterized. One is found in rod cells where it plays a
+#    role in  visual  signal transduction. It specifically binds to cGMP leading
+#    to an  opening  of  the channel and thereby causing a depolarization of rod
+#    photoreceptors.  In  olfactory epithelium  a similar, cAMP-binding, channel
+#    plays a role in odorant signal transduction.
+# 
+# There are six invariant amino acids in this domain, three of which are glycine
+# residues that  are thought to be essential for  maintenance  of the structural
+# integrity of  the beta-barrel. We developed  two  signature patterns for  this
+# domain.  The first pattern is located within beta-barrels 2 and 3 and contains
+# the  first two  conserved  Gly. The second  pattern  is  located  within beta-
+# barrels 6  and  7  and  contains  the third conserved Gly as well as the three
+# other invariant residues.
+# 
+# -Consensus pattern: [LIVM]-[VIC]-x-{H}-G-[DENQTA]-x-[GAC]-{L}-x-[LIVMFY](4)-
+#                     x(2)-G
+# -Sequences known to belong to this class detected by the pattern: ALL.
+# -Other sequence(s) detected in Swiss-Prot: NONE.
+# 
+# -Consensus pattern: [LIVMF]-G-E-x-[GAS]-[LIVM]-x(5,11)-R-[STAQ]-A-x-[LIVMA]-x-
+#                     [STACV]
+# -Sequences known to belong to this class detected by the pattern: ALL.
+# -Other sequence(s) detected in Swiss-Prot: 1.
+# 
+# -Sequences known to belong to this class detected by the profile: ALL.
+# -Other sequence(s) detected in Swiss-Prot: 3.
+# 
+# -Last update: December 2004 / Pattern and text revised.
+# 
+# [ 1] Weber I.T., Shabb J.B., Corbin J.D.
+#      "Predicted structures of the cGMP binding domains of the
+#      cGMP-dependent protein kinase: a key alanine/threonine difference in
+#      evolutionary divergence of cAMP and cGMP binding sites."
+#      Biochemistry 28:6122-6127(1989).
+#      PubMed=2550070
+# [ 2] Kaupp U.B.
+#      "The cyclic nucleotide-gated channels of vertebrate photoreceptors and
+#      olfactory epithelium."
+#      Trends Neurosci. 14:150-157(1991).
+#      PubMed=1710853
+# [ 3] Shabb J.B., Corbin J.D.
+#      "Cyclic nucleotide-binding domains in proteins having diverse
+#      functions."
+#      J. Biol. Chem. 267:5723-5726(1992).
+#      PubMed=1313416
+# 
+# ***************
+# 
+# Motif: CNMP_BINDING_2
+# Count: 1
+# 
+# ***********************************************************
+# * Cyclic nucleotide-binding domain signatures and profile *
+# ***********************************************************
+# 
+# Proteins that bind cyclic nucleotides (cAMP or cGMP) share a structural domain
+# of about  120  residues  [1-3].  The  best  studied  of  these proteins is the
+# prokaryotic catabolite  gene  activator  (also  known  as  the  cAMP  receptor
+# protein) (gene  crp)  where  such  a  domain  is known to be composed of three
+# alpha-helices and  a    distinctive   eight-stranded, antiparallel beta-barrel
+# structure. Such a domain is known to exist in the following proteins:
+# 
+#  - Prokaryotic catabolite gene activator protein (CAP).
+#  - cAMP-  and  cGMP-dependent  protein  kinases (cAPK and cGPK). Both types of
+#    kinases contains two tandem copies of the cyclic nucleotide-binding domain.
+#    The cAPK's  are composed of two different subunits: a catalytic chain and a
+#    regulatory chain  which  contains both copies of the domain. The cGPK's are
+#    single chain  enzymes that include the two copies of the domain in their N-
+#    terminal section.  The nucleotide specificity of cAPK and cGPK is due to an
+#    amino acid  in  the  conserved region of beta-barrel 7: a threonine that is
+#    invariant in cGPK is an alanine in most cAPK.
+#  - Vertebrate  cyclic nucleotide-gated ion-channels. Two such cations channels
+#    have been  fully  characterized. One is found in rod cells where it plays a
+#    role in  visual  signal transduction. It specifically binds to cGMP leading
+#    to an  opening  of  the channel and thereby causing a depolarization of rod
+#    photoreceptors.  In  olfactory epithelium  a similar, cAMP-binding, channel
+#    plays a role in odorant signal transduction.
+# 
+# There are six invariant amino acids in this domain, three of which are glycine
+# residues that  are thought to be essential for  maintenance  of the structural
+# integrity of  the beta-barrel. We developed  two  signature patterns for  this
+# domain.  The first pattern is located within beta-barrels 2 and 3 and contains
+# the  first two  conserved  Gly. The second  pattern  is  located  within beta-
+# barrels 6  and  7  and  contains  the third conserved Gly as well as the three
+# other invariant residues.
+# 
+# -Consensus pattern: [LIVM]-[VIC]-x-{H}-G-[DENQTA]-x-[GAC]-{L}-x-[LIVMFY](4)-
+#                     x(2)-G
+# -Sequences known to belong to this class detected by the pattern: ALL.
+# -Other sequence(s) detected in Swiss-Prot: NONE.
+# 
+# -Consensus pattern: [LIVMF]-G-E-x-[GAS]-[LIVM]-x(5,11)-R-[STAQ]-A-x-[LIVMA]-x-
+#                     [STACV]
+# -Sequences known to belong to this class detected by the pattern: ALL.
+# -Other sequence(s) detected in Swiss-Prot: 1.
+# 
+# -Sequences known to belong to this class detected by the profile: ALL.
+# -Other sequence(s) detected in Swiss-Prot: 3.
+# 
+# -Last update: December 2004 / Pattern and text revised.
+# 
+# [ 1] Weber I.T., Shabb J.B., Corbin J.D.
+#      "Predicted structures of the cGMP binding domains of the
+#      cGMP-dependent protein kinase: a key alanine/threonine difference in
+#      evolutionary divergence of cAMP and cGMP binding sites."
+#      Biochemistry 28:6122-6127(1989).
+#      PubMed=2550070
+# [ 2] Kaupp U.B.
+#      "The cyclic nucleotide-gated channels of vertebrate photoreceptors and
+#      olfactory epithelium."
+#      Trends Neurosci. 14:150-157(1991).
+#      PubMed=1710853
+# [ 3] Shabb J.B., Corbin J.D.
+#      "Cyclic nucleotide-binding domains in proteins having diverse
+#      functions."
+#      J. Biol. Chem. 267:5723-5726(1992).
+#      PubMed=1313416
+# 
+# ***************
+# 
+#
+#---------------------------------------
